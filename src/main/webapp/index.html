@@ -11,8 +11,16 @@
 
 <h1>Descarga archivos desde el servidor</h1>
 
-<p><a href="download?type=pdf">Descargar PDF</a></p>
-<p><a href="download?type=excel">Descargar Excel</a></p>
+<form action="download" method="get">
+  <!-- Botón que envía type=pdf -->
+  <button type="submit" name="type" value="pdf">
+    Descargar PDF
+  </button>
+  <!-- Botón que envía type=excel -->
+  <button type="submit" name="type" value="excel">
+    Descargar Excel
+  </button>
+</form>
 
 </body>
 </html>
